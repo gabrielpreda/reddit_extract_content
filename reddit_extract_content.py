@@ -70,9 +70,6 @@ def update_and_save_dataset(topics_df):
 
 
 if __name__ == "__main__": 
-    for i in range(0, 25):
-        time.sleep(600 if i > 0 else 1)
-        print(f"Iteration: {i}")
-        reddit = reddit_connection()
-        topics_data_df = build_dataset(reddit)
-        update_and_save_dataset(topics_data_df)
+	reddit = reddit_connection()
+	topics_data_df = build_dataset(reddit)
+	update_and_save_dataset(topics_data_df)
